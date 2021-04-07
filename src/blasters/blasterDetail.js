@@ -18,7 +18,10 @@ export const BlasterDetail=(props)=>{
     // the condition display button for ordering
     const displayButton=()=>{
         return(
-            <button>Order Now</button>
+            <>
+            <p>Total Cost: ${quantity*blasterPrice}</p>
+            <button onClick={()=>props.history.push("/")}>Order Now</button>
+            </>
         )
     }
 
