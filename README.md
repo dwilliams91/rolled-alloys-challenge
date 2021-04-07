@@ -14,4 +14,6 @@ Are the Rebels destroying your deathstar? Is the Empire ruining your lightsaber?
 We offer a wide range of blasters and lightsabers which you can view from the navbar. 
 Click on an item to see the details and add it to your cart.
 
-#Possible 
+# Possible set-up problems:
+from the root directory, run the command:
+"npm install" and "npm i --save react-router-dom"
