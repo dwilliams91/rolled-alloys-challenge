@@ -12,7 +12,7 @@ export const ApplicationViews = (props) => {
             <Route exact path="/">
                 <BlasterList />
             </Route>
-            <Route path="/blaster/:blasterName(\d+)" render={
+            <Route path="/blaster/:blaster_name" render={
                 props => <BlasterDetail {...props} />
             } />
         </BlasterProvider>
