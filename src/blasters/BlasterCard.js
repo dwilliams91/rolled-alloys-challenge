@@ -22,7 +22,6 @@ export const BlasterCard = ({ singleblaster }) => {
                     
                 </h5>
                 <p>${singleblaster.price}</p>
-                <p>Beam Color {singleblaster.beam}</p>
             </div>
         </>
     )

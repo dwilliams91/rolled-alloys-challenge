@@ -27,7 +27,7 @@ export const BlasterDetail=(props)=>{
         <div className="blasterForm">
         <h2>{blasterName}</h2>
         <p>${blasterPrice}</p>
-        <p>Color:{blasterBeam} </p>
+        <p>Color: {blasterBeam} </p>
         <label>Quantity</label> 
         <input value={quantity} onChange={handleInputChange}></input>
         {quantity>0 ? displayButton(): <></>}
