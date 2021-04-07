@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react"
 
-export const BlasterDetail=(props)=>{
-    // if each blaster had an id, JSON-server could make an easy call to get the individual blaster. 
+export const LaserSaberDetail=(props)=>{
+    // if each laserSaber had an id, JSON-server could make an easy call to get the individual laserSaber. 
     // however, since each item does not have an ID, I'm working off of one fetchcall and passing the data around with state
-    const blasterName = props.location.state.chosenBlasterName
-    const blasterPrice=props.location.state.chosenBlasterPrice
-    const blasterBeam=props.location.state.chosenBlasterBeam
+    const laserSaberName = props.location.state.chosenLaserSaberName
+    const laserSaberPrice=props.location.state.chosenLaserSaberPrice
+    const laserSaberColor=props.location.state.chosenLaserSaberColor
+    const laserSaberBladeCount=props.location.state.chosenLaserSaberBladeCount
+
 
     // set the state for the quantity
     const [quantity, setQuantity] =useState()
@@ -24,10 +26,11 @@ export const BlasterDetail=(props)=>{
 
     return(
         <>
-        <div className="blasterForm">
-        <h2>{blasterName}</h2>
-        <p>${blasterPrice}</p>
-        <p>Color:{blasterBeam} </p>
+        <div className="laserSaberForm">
+        <h2>{laserSaberName}</h2>
+        <p>${laserSaberPrice}</p>
+        <p>Color: {laserSaberColor} </p>
+        <p>Blade Count: {laserSaberBladeCount}</p>
         <label>Quantity</label> 
         <input value={quantity} onChange={handleInputChange}></input>
         {quantity>0 ? displayButton(): <></>}

@@ -4,7 +4,9 @@ import { BlasterContext } from "./blasterProvider"
 import "./blaster.css"
 
 export const BlasterList=()=>{
+    // allow this module to use the provider
     const {getBlasters, Blasters}=useContext(BlasterContext)
+    // get the data on render
     useEffect(()=>{
         getBlasters()
     },[])

@@ -11,11 +11,6 @@ export const BlasterProvider = (props) => {
             .then(setBlasters)
     }
     
-    // const getBlasterByName = (id) => {
-    //     return fetch(`http://localhost:8088/animals/${ id }?_expand=location&_expand=customer`)
-    //         .then(res => res.json())
-    // }
-
     
     return (
         <BlasterContext.Provider value={{
@@ -25,6 +20,4 @@ export const BlasterProvider = (props) => {
         </BlasterContext.Provider>
 
     )
-    
-
 }
