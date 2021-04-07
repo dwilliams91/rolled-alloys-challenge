@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import { BlasterCard } from "./BlasterCard"
 import { BlasterContext } from "./blasterProvider"
+import "./blaster.css"
 
 export const BlasterList=()=>{
     const {getBlasters, Blasters}=useContext(BlasterContext)
@@ -12,9 +13,8 @@ export const BlasterList=()=>{
         <>
         
         <h2>Blasters</h2>
-        <div>
+        <div >
             {Blasters.map(singleBlaster=>{
-                {console.log(singleBlaster)}
                 return <BlasterCard key={"singleBlaster"+singleBlaster.name} singleblaster={singleBlaster}></BlasterCard>
             })}
         </div>

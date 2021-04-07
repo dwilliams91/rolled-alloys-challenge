@@ -1,0 +1,9 @@
+.blasterCard{
+    border: 1px solid black;
+    margin: 10px;
+}
+.blasterCard:hover{
+    position: relative;
+    bottom: 5px;
+    box-shadow: 0 5px 5px rgb(0, 24, 24);
+}
