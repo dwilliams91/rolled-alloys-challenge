@@ -1,6 +1,6 @@
 
 # Getting Started
-1) Clone down the app
+1) Clone down the app. From the directory, type in "npm install" and "npm i --save react-router-dom"
 
 2) In your terminal, from the root directory "rolled-alloys-challenge" type in the command "json-server -p 8088 -w database.json". This starts the json server. 
 
@@ -14,6 +14,5 @@ Are the Rebels destroying your deathstar? Is the Empire ruining your lightsaber?
 We offer a wide range of blasters and lightsabers which you can view from the navbar. 
 Click on an item to see the details and add it to your cart.
 
-# Possible set-up problems:
-from the root directory, run the command:
-"npm install" and "npm i --save react-router-dom"
+
+
