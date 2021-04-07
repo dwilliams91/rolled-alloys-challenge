@@ -1,11 +1,11 @@
 import React from "react"
 
-export const BlasterCard=(blaster)=>{
+export const BlasterCard=({singleblaster})=>{
     return(
         <>
-        <h5>{blaster.name}</h5>
-        <p>${blaster.price}</p>
-        <p>Beam Color {blaster.beam}</p>
+        <h5>{singleblaster.name}</h5>
+        <p>${singleblaster.price}</p>
+        <p>Beam Color {singleblaster.beam}</p>
         </>
     )
 }

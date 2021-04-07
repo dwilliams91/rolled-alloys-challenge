@@ -10,10 +10,12 @@ export const BlasterList=()=>{
 
     return(
         <>
+        
         <h2>Blasters</h2>
         <div>
             {Blasters.map(singleBlaster=>{
-                return <BlasterCard key={"singleBlaster"+singleBlaster.name} blaster={singleBlaster}></BlasterCard>
+                {console.log(singleBlaster)}
+                return <BlasterCard key={"singleBlaster"+singleBlaster.name} singleblaster={singleBlaster}></BlasterCard>
             })}
         </div>
         </>
